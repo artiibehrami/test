@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <img src="coca-cola.webp" alt="coca-cola" width="140">
+    <title>Your Marketplace</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <form action="/process-payment" method="post">
+        <!-- Payment details, shipping information, etc. -->
+        <label for="cardNumber">Credit Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <!-- Add more input fields for other payment details -->
+
+        <button type="submit">Complete Purchase</button>
+    </form>
+
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+        <input type="submit" value="Sign Up">
+        <!-- Add a shopping cart icon and link in the header -->
+        <header>
+            <h1>Your Marketplace</h1>
+            <div class="user-account">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <!-- Create a checkout button in the shopping cart page -->
+            <main>
+                <h2>Shopping Cart</h2>
+                <!-- Display cart items -->
+                <div class="cart-item">
+                    <!-- Product details -->
+                    <p>Vipa Chips</p>
+                    <p>Çmimi:0.70c</p>
+                    <!-- Quantity -->
+                    <input type="number" value="1">
+                    <!-- Remove button -->
+                    <button>Remove</button>
+                </div>
+                <!-- Repeat for other items -->
+                <button class="checkout-button">Proceed to Checkout</button>
+                <div class="cart-item">
+                    <!-- Product details -->
+                    <p>Haribo</p>
+                    <p>Çmimi:0.70c</p>
+                    <!-- Quantity -->
+                    <input type="number" value="1">
+                    <!-- Remove button -->
+                    <button>Remove</button>
+                </div>
+                <!-- Repeat for other items -->
+                <button class="checkout-button">Proceed to Checkout</button>
+                <div class="cart-item">
+                    <!-- Product details -->
+                    <p>Coca-Cola</p>
+                    <p>Çmimi:0.60c</p>
+                    <!-- Quantity -->
+                    <input type="number" value="1">
+                    <!-- Remove button -->
+                    <button>Remove</button>
+                </div>
+                <!-- Repeat for other items -->
+                <button class="checkout-button">Proceed to Checkout</button>
+            </main>
+            <main>
+
+
+                <section id="order-history">
+                    <h2>Order History</h2>
+                    <ul id="order-list"></ul>
+                </section>
+                <div class="chat-container">
+                    <div id="chat-box">
+                        <div class="bot-message">Hello! How can I assist you today?</div>
+                    </div>
+                    <form id="user-form">
+                        <label>Select an option:</label>
+                        <input type="radio" name="options" value="1" id="option1">
+                        <label for="option1">Product Inquiry</label>
+                        <input type="radio" name="options" value="2" id="option2">
+                        <label for="option2">Order Status</label>
+                        <input type="radio" name="options" value="3" id="option3">
+                        <label for="option3">Recommendations</label>
+                        <button type="button">Submit</button>
+                    </form>
+                </div>
+
+            </main>
+
+        </header>
+
+
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+
+    <header>
+        <h1>Welcome to Free shop HYSI</h1>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="vipa.jpg" alt="Vipa" width="100">
+
+            <h2>Produkti 1</h2>
+            <p>Vipa chips sweet pepper</p>
+            <p>Çmimi:0.30c</p>
+            <button>Vendose ne shport</button>
+        </div>
+
+        <div class="product">
+            <h2>Produkti 2</h2>
+            <img src="haribo.webp" alt="Haribo" width="100">
+            <p>Haribo</p>
+            <p>Çmimi 0.70c</p>
+            <button>Vendose ne shport</button>
+        </div>
+        <div class="product">
+            <h2>Produkti 3</h2>
+            <img src="cocacola.jpg" alt="coca-cola" width="150">
+            <p>Coca Cola</p>
+            <p>Çmimi 0.60c</p>
+            <button>Vendose ne shport</button>
+        </div>
+
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Marketplace. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
